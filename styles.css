@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Rosario", sans-serif;
+  }
+  
+  hr {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  /* Header */
+  
+  header {
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  
+  #header-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+  }
+  
+  h2 {
+    position: absolute;
+    color: white;
+    font-family: "Rozha One", sans-serif;
+    font-size: 96px;
+    transform: center;
+  }
+  
+  /* Nav Bar Styling */
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 25px;
+    align-items: center;
+    background-color: rgba(175, 217, 160, 0.6);
+    color: black;
+    width: 100%;
+    height: 161px;
+    font-family: "Raleway", sans-serif;
+    z-index: 10;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 48px;
+    justify-content: flex-end;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  h1 {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 48px;
+    font-weight: 400px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  /* body */
+  
+  #About_Us {
+    display: flex;
+    flex-direction: column;
+    gap: 165px;
+  }
+  
+  .about {
+    display: flex;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 47px;
+    font-family: "Rosario", sans-serif;
+    font-size: 32px;
+  }
+  
+  .about:nth-child(1) {
+    padding-top: 54px;
+    text-align: left;
+  }
+  
+  .about:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  
+  .about:nth-child(2) .about-text {
+    text-align: right;
+  }
+  
+  .about:nth-child(3) {
+    flex-direction: flex-start;
+    padding-bottom: 70px;
+  }
+  
+  .about img {
+    max-height: 300px;
+    max-width: 460px;
+    border-radius: 30px;
+  }
+  
+  h3 {
+    margin-bottom: 25px;
+    font-family: "Rohza One", sans-serif;
+    font-size: 32px;
+  }
+  
+  /* video */
+  
+  #Wizards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    font-family: "Rozha One";
+    font-size: 48px;
+  }
+  
+  /* store */
+  .bundle-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rozha One", sans-serif;
+    font-size: 48px;
+    padding-bottom: 32px;
+  }
+  
+  #Store {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+  
+  h5,
+  .price {
+    font-size: 32px;
+    font-family: "Rozha One", serif;
+  }
+  
+  li,
+  .most-popular {
+    font-family: "Rozha One", serif;
+    font-size: 20px;
+  }
+  
+  .price-card,
+  .most-popular-badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    min-width: 250px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .card-title {
+    padding-top: 32px;
+    padding-bottom: 27px;
+    font-size: 32px;
+  }
+  
+  .price {
+    font-size: 48px;
+    color: black;
+  }
+  
+  .features {
+    list-style-position: inside;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 15px 26px;
+    font-family: raleway;
+    font-size: 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 auto;
+    margin-bottom: 29px;
+  }
+  
+  .cta-button:hover {
+    opacity: 0.9;
+  }
+  
+  .price-card:nth-child(1) {
+    background-color: #e0c210; /* Yellow */
+  }
+  
+  .price-card:nth-child(2) {
+    background-color: #ea0002; /* Red */
+  }
+  
+  .price-card:nth-child(3) {
+    background-color: #853f02; /* Brown */
+  }
+  
+  .most-popular-badge {
+    position: absolute;
+    display: flex;
+    background-color: rgba(175, 217, 160, 0.6);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: -12%;
+  }
+  
+  /* newsletter */
+  .newsletter-title {
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px; /* Rounded corners */
+    border: 1px solid #ccc;
+    width: 250px; /* Adjust width */
+    outline: none;
+  }
+  /* footer */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(175, 217, 160, 0.6);
+    width: 100%;
+    height: 160px;
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .copyright {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Mobile View (default, up to 767px) */
+  /* Already set width: 100% in the base .price-card style */
+  
+  /* Tablet View (768px to 991px) */
+  @media (min-width: 769px) and (max-width: 991px) {
+    .price-card {
+      width: 45%;
+      margin: 0 2% 30px 2%;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+  
+    .price-card:nth-child(3) {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* Desktop View (992px and above) */
+    @media (min-width: 992px) {
+      .price-card {
+        width: 30%;
+        margin: 0 1.5% 30px 1.5%;
+      }
+    }
+  
+    .price-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
